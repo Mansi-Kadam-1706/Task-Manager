@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel ="stylesheet" href="style.css">
+<body>
+
+    <input id="taskInput" placeholder="Task Title"/>
+    <select id="priorityInput">
+        <option value="low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="high">High</option>
+    </select><br><br>
+    <button id="addBtn">Add Task</button>
+
+    <br><br>
+    <div id="taskList"></div>
+    <br><br>
+
+    <div>
+        <button id="filterAll">ALL</button>
+        <button id="filterCompleted">Completed</button>
+        <button id="filterPending">Pending</button>
+        <button id="filterHigh">High Priority</button>
+    </div>
+<br><br>
+    <div id="stats">
+        Total: <span id="total">0</span> |
+        Completed: <span id="completed">0</span>|
+        Pending: <span id="pending">0</span> |
+  Completion %: <span id="completion">0</span>%
+
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
